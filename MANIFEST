@@ -1,0 +1,11 @@
+Build.PL
+Changes
+lib/Email/Store/Header.pm
+Makefile.PL
+MANIFEST
+META.yml
+README
+t/00.load.t
+t/perlcritic.t
+t/pod-coverage.t
+t/pod.t

@@ -1,0 +1,17 @@
+--- #YAML:1.0
+name:                Email-Store-Header
+version:             v0.0.3
+abstract:            plugin to Email::Store to parse and save message headers
+license:             ~
+generated_by:        ExtUtils::MakeMaker version 6.31
+distribution_type:   module
+requires:     
+    Email::Store:                  0
+    Mail::Header:                  0
+    Test::More:                    0
+    version:                       0
+meta-spec:
+    url:     http://module-build.sourceforge.net/META-spec-v1.2.html
+    version: 1.2
+author:
+    - Chisel Wright <cpan@herlpacker.co.uk>
