@@ -1,20 +1,20 @@
-use strict;
-use warnings;
-use ExtUtils::MakeMaker;
+use inc::Module::Install;
+use lib 'lib';
 
-WriteMakefile(
-    NAME                => 'Email::Store::Header',
-    AUTHOR              => 'Chisel Wright <cpan@herlpacker.co.uk>',
-    VERSION_FROM        => 'lib/Email/Store/Header.pm',
-    ABSTRACT_FROM       => 'lib/Email/Store/Header.pm',
-    PL_FILES            => {},
-    PREREQ_PM => {
-        'Test::More' => 0,
-        'version'    => 0,
+name            'Email-Store-Header';
+author          'Chisel Wright <cpan@herlpacker.co.uk>';
+version         '0.0.4';
 
-        'Email::Store'  => 0,
-        'Mail::Header'  => 0,
-    },
-    dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
-    clean               => { FILES => 'Email-Store-Header-*' },
+all_from        'lib/Email/Store/Header.pm';
+
+requires(
+    'Email::Store'      => 0,
+    'Mail::Header'      => 0,
+    'version'           => 0,
 );
+
+build_requires(
+    'Test::More'        => 0,
+);
+
+WriteAll;

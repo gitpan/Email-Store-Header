@@ -1,5 +1,9 @@
 Revision history for Email-Store-Header
 
-0.0.1  Thu Nov 30 12:34:22 2006
-       Initial release.
+0.0.4   Mon Mar  9 09:16:00 GMT 2009
+    - Altered table schema from varchar(xxx) to text
+    - removed out-of-date Build.PL
+
+0.0.3  Thu Nov 30 12:34:22 2006
+       Initial release. (Module::Starter version bug I missed)
 

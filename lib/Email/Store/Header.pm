@@ -4,7 +4,7 @@ use warnings;
 use strict;
 use Carp;
 
-use version; our $VERSION = qv('0.0.3');
+use version; our $VERSION = qv('0.0.4');
 
 # Other recommended modules (uncomment to use):
 #  use IO::Prompt;
@@ -189,7 +189,7 @@ Chisel Wright  C<< <cpan@herlpacker.co.uk> >>
 
 =head1 LICENCE AND COPYRIGHT
 
-Copyright (c) 2007, Chisel Wright C<< <cpan@herlpacker.co.uk> >>. All rights reserved.
+Copyright (c) 2007, Chisel Wright C<< <cpan@herlpacker.co.uk> >>.
  
 This module was written on time and machinery provided by Net-A-Porter,
 http://www.net-a-porter.com/
@@ -226,7 +226,7 @@ SUCH DAMAGES.
 __DATA__
 CREATE TABLE IF NOT EXISTS header (
     id INTEGER auto_increment NOT NULL PRIMARY KEY,
-    mail varchar(255) NOT NULL,
-    header varchar(1000) NOT NULL,
-    value varchar(1000) NOT NULL
+    mail text NOT NULL,
+    header text NOT NULL,
+    value text NOT NULL
 );
